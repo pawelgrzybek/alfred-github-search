@@ -12,11 +12,14 @@ This workflow is written in Node as JavaScript is the only language that I know 
 
 ## How to use
 
-1. Open terminal.
-2. Type github.
-3. Pass an argument to a script - name of a repository.
-4. Wait for results.
-5. CLick `Return` to open on Github or `Cmd + c` to copy clone link.
+1. Open Alfred App
+2. Type `github`
+3. Pass an argument to a script (name of a repository)
+4. Wait for results
+5. - `Return` to open on Github
+   - `cmd + c` to copy clone link.
+   - Hold `cmd` to open pull requests
+   - Hold `alt` to open issues
 
 ## Future improvements
 
