@@ -4,7 +4,7 @@ Alfred workflow to search for Github repository.
 
 ## Requirements
 
-This workflow is written in Node as JavaScript is the only language that I know — I'm more than happy to accept any pull request that ports this workflow to more "user friendly" language. To make it work, node needs to be installed on your machine. To confirm that you have it installed open a Terminal app and type `node -v` that shows a version on installed interpreter or alert "commnd not found" which means that you need to [install it](https://nodejs.org/).
+This workflow is written in Node as JavaScript is the only language that I know — I'm more than happy to accept any pull request that ports this workflow to more "user friendly" language. To make it work, node needs to be installed on your machine. To confirm that you have it installed open a Terminal app and type `node -v` that shows a version on installed interpreter or alert "command not found" which means that you need to [install it](https://nodejs.org/).
 
 ## Download
 
