@@ -23,13 +23,13 @@
 		</array>
 	</dict>
 	<key>createdby</key>
-	<string>Paweł Grzybek</string>
+	<string>Pawel Grzybek</string>
 	<key>description</key>
 	<string>Search for repo on github</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Github Search</string>
+	<string>GitHub Search</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -56,7 +56,7 @@
 				<key>queuedelaymode</key>
 				<integer>0</integer>
 				<key>queuemode</key>
-				<integer>1</integer>
+				<integer>2</integer>
 				<key>runningsubtext</key>
 				<string>Searching...</string>
 				<key>script</key>
@@ -64,13 +64,13 @@
 eval "$($SHELL -i -l -c 'echo -e "\n"PATH=\"$PATH:\$PATH\""\n"' 2&gt;/dev/null | grep "^PATH=")"
 export PATH
 
-if command -v node &gt;/dev/null 2&gt;&amp;1; then
-	node index.js "$1"
+if command -v deno &gt;/dev/null 2&gt;&amp;1; then
+	deno run --allow-net=api.github.com index.ts "$1"
 else
 	echo $'{
     "items":[
       {
-        "title": "Couldn\'t find the `node` binary",
+        "title": "Couldn\'t find the `deno` binary",
         "subtitle": "Symlink it to `/usr/local/bin`"
       }
     ]
@@ -123,7 +123,7 @@ fi</string>
 		<key>9900D42F-E141-4452-B1EE-C24E9848EADE</key>
 		<dict>
 			<key>xpos</key>
-			<integer>235</integer>
+			<integer>230</integer>
 			<key>ypos</key>
 			<integer>60</integer>
 		</dict>
@@ -135,6 +135,10 @@ fi</string>
 			<integer>60</integer>
 		</dict>
 	</dict>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>1.0.0</string>
 	<key>webaddress</key>
 	<string>https://pawelgrzybek.com/</string>
 </dict>
