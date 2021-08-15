@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>com.pawelgrzybek.github</string>
+	<string>com.pawelgrzybek.alfred-github-search</string>
 	<key>category</key>
 	<string>Productivity</string>
 	<key>connections</key>
